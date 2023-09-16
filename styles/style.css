@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+:root {
+    --fonte-primaria: 'Mukta';
+    --fonte-secundaria: 'Cinzel', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(8px);
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+.cabecalho {
+    padding: 2% 0% 1% 65%;
+    background-color: #000000;
+    border-bottom: 1px solid #304F8C;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.apresentacao {
+    margin: 0% 5% 8% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10%;
+}
+
+.apresentacao__imagem {
+    width: 50%;
+    height: 700px;
+    border-radius: 50px;
+    box-shadow: 4px 5px 14px 1px #304f8c;
+    -webkit-box-shadow: 4px 5px 14px 1px #304f8c;
+    -moz-box-shadow: 4px 5px 14px 1px #304f8c;
+    margin-top: 50px;
+    background-color: #000000;
+}
+
+.apresentacao__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2rem;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 3px 3px 3px #304f8c;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.1rem;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__links__subtitulo {
+    font-family: var(--fonte-primaria);
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+a.apresentacao__links__botao {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 70%;
+    height: auto;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 21.5px 0;
+    text-decoration: none;
+    box-shadow: 4px 5px 14px 1px #304f8c;
+    -webkit-box-shadow: 4px 5px 14px 1px #304f8c;
+    -moz-box-shadow: 4px 5px 14px 1px #304f8c;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: var(--fonte-primaria);
+}
+
+a.apresentacao__links__botao:hover {
+    box-shadow: 4px 5px 14px 1px #000000;
+    -webkit-box-shadow: 4px 5px 14px 1px #000000;
+    -moz-box-shadow: 4px 5px 14px 1px #000000;
+    background-color: #304f8c3b;
+    color: #ffffff;
+}
+
+.rodape {
+    color: #ffffff;
+    background-color: #000000;
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-top: 1px solid #304f8c;
+}    
+
+.redes {
+    height: 30px;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 4% 4%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+    .apresentacao__imagem {
+        margin-bottom: 3em;
+        height: 450px;
+        width: 500px;
+    }
+
+    .cabecalho {
+        display: flex;
+        justify-content: center;
+        padding: 3% 0;
+    }
+}
+
+@media screen and (max-width: 520px) {
+
+    .cabecalho__menu__link {
+        font-size: 1.2rem;
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 1.2rem;
+    }
+
+    .apresentacao__conteudo__texto {
+        font-size: 1rem;
+    }
+
+    .apresentacao__links__subtitulo {
+        font-size: 1.2rem;
+    }
+
+    .apresentacao__imagem {
+        margin-top: 1rem;
+        margin-bottom: 2em;
+        height: 300px;
+        width: 300px;
+    }
+
+    a.apresentacao__links__botao {
+        font-size: 1.2rem;
+        width: 90%;
+    }
+
+    .rodape {
+        font-size: 1.2rem;
+    }
+
+    .redes {
+        margin-top: 5px;
+        height: 20px;
+    }
+}
